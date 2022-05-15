@@ -7,6 +7,10 @@ class CallPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.local_phone_rounded),
+        onPressed: (){},
+      ),
       body: ListView.builder( itemCount: 5, itemBuilder: (BuildContext context, int index){
         return Container(
           margin: const EdgeInsets.only(bottom: 8.0),

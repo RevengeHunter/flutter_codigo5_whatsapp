@@ -9,6 +9,10 @@ class ChatPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.message),
+        onPressed: (){},
+      ),
       body: ListView.builder(
         itemCount: chatList.length,
         itemBuilder: (BuildContext context, int index) {
